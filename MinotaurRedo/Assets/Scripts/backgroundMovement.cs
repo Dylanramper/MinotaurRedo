@@ -8,7 +8,7 @@ public class backgroundMovement : MonoBehaviour
 
     //[SerializeField] GameObject backGround;
     [SerializeField] private float moveSpeed = 0f;
-    private float posX = 18.44f;
+    private float posX = 18.40f;
     private float bound = -19.96f;
 
     // Start is called before the first frame update
@@ -18,7 +18,7 @@ public class backgroundMovement : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         moveBackground();
     }
