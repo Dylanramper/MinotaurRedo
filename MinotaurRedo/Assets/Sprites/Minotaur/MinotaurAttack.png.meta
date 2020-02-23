@@ -1,7 +1,73 @@
 fileFormatVersion: 2
 guid: 6223c6bfa606bcc4dba18ad5dd5df9ad
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -6736481775169091774
+    second: MinotaurAttack_0
+  - first:
+      213: -830855911201905467
+    second: MinotaurAttack_1
+  - first:
+      213: 3711841702422704159
+    second: MinotaurAttack_2
+  - first:
+      213: -4501676970775422105
+    second: MinotaurAttack_3
+  - first:
+      213: -3180360849017214703
+    second: MinotaurAttack_4
+  - first:
+      213: 5210146830764680282
+    second: MinotaurAttack_5
+  - first:
+      213: -3855288772590839331
+    second: MinotaurAttack_6
+  - first:
+      213: 6511963294538626201
+    second: MinotaurAttack_7
+  - first:
+      213: 1774660564368692166
+    second: MinotaurAttack_8
+  - first:
+      213: 6813780455237677734
+    second: MinotaurAttack_9
+  - first:
+      213: 6724220672438519102
+    second: MinotaurAttack_10
+  - first:
+      213: 8359827151760464044
+    second: MinotaurAttack_11
+  - first:
+      213: 2590211476283867982
+    second: MinotaurAttack_12
+  - first:
+      213: -1224814697438568224
+    second: MinotaurAttack_13
+  - first:
+      213: -5513417197203022127
+    second: MinotaurAttack_14
+  - first:
+      213: -7472038479584575888
+    second: MinotaurAttack_15
+  - first:
+      213: -346142680055596719
+    second: MinotaurAttack_16
+  - first:
+      213: -6806777045239428896
+    second: MinotaurAttack_17
+  - first:
+      213: 8466776037199623397
+    second: MinotaurAttack_18
+  - first:
+      213: 3033794892061982752
+    second: MinotaurAttack_19
+  - first:
+      213: 2494833133133377522
+    second: MinotaurAttack_20
+  - first:
+      213: -192079483102266592
+    second: MinotaurAttack_21
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,7 +106,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -70,9 +136,381 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: MinotaurAttack_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 80
+        width: 56
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 247472354853382a0800000000000000
+      internalID: -6736481775169091774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MinotaurAttack_1
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 80
+        width: 54
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c4e64963f43874f0800000000000000
+      internalID: -830855911201905467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MinotaurAttack_2
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 80
+        width: 54
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f10f267bc5c138330800000000000000
+      internalID: 3711841702422704159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MinotaurAttack_3
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 80
+        width: 50
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76bdf5f55a4d681c0800000000000000
+      internalID: -4501676970775422105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MinotaurAttack_4
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 80
+        width: 56
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 119e4c878a61dd3d0800000000000000
+      internalID: -3180360849017214703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MinotaurAttack_5
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 80
+        width: 56
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a542b5320f82e4840800000000000000
+      internalID: 5210146830764680282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MinotaurAttack_6
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 80
+        width: 57
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd9db2b99434f7ac0800000000000000
+      internalID: -3855288772590839331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MinotaurAttack_7
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 80
+        width: 57
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9947b515d142f5a50800000000000000
+      internalID: 6511963294538626201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MinotaurAttack_8
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 0
+        width: 68
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c31718716cd0a810800000000000000
+      internalID: 1774660564368692166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MinotaurAttack_12
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 0
+        width: 63
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e434a093d9742f320800000000000000
+      internalID: 2590211476283867982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MinotaurAttack_15
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 0
+        width: 65
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07ebf44679cfd4890800000000000000
+      internalID: -7472038479584575888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MinotaurAttack_17
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 0
+        width: 63
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e8883957587981a0800000000000000
+      internalID: -6806777045239428896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MinotaurAttack_18
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 0
+        width: 63
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e4b21a62f7008570800000000000000
+      internalID: 8466776037199623397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MinotaurAttack_19
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 0
+        width: 51
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 020cfbe61643a1a20800000000000000
+      internalID: 3033794892061982752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MinotaurAttack_20
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 0
+        width: 35
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ff2a42348d6f9220800000000000000
+      internalID: 2494833133133377522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MinotaurAttack_21
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 0
+        width: 56
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02b7c015ab8955df0800000000000000
+      internalID: -192079483102266592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

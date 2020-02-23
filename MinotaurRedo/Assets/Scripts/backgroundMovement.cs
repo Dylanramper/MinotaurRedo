@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class backgroundMovement : MonoBehaviour
 {
+    //fix spacing for background, trees ect.
+
     //[SerializeField] GameObject backGround;
     [SerializeField] private float moveSpeed = 0f;
     private float posX = 18.44f;
