@@ -37,6 +37,10 @@ public class PlayerManager : MonoBehaviour
         //Attack
 
         //Slide
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            bc.size = new Vector2(bc.size.x, 0.2f);
+        }
     }
 
 
