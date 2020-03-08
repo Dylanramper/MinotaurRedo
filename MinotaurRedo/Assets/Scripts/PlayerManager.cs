@@ -32,7 +32,8 @@ public class PlayerManager : MonoBehaviour
         //set the normal size of the box collider if player is not sliding
         if(sliding == false)
         {
-            bc.size = new Vector2(bc.size.x, 0.38f);
+            bc.size = new Vector2(bc.size.x, 0.36f);
+            bc.offset = new Vector2(bc.offset.x, -0.03f);
         }
     }
 
@@ -60,7 +61,8 @@ public class PlayerManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.S) && sliding == false && grounded == true && attacking == false)
         {
             //Set the box collider size to 0.2f and play the slide animation
-            bc.size = new Vector2(bc.size.x, 0.2f);
+            bc.size = new Vector2(bc.size.x, 0.25f);
+            bc.offset = new Vector2(bc.offset.x, 0f);
 
             sliding = true;
             anim.SetBool("IsSliding", true);
