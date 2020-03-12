@@ -28,7 +28,7 @@ public class EnemySpawn : MonoBehaviour
 
     void SpawnEnemy()
     {
-        int EnemyIndex = Random.Range(0, Enemies.Count - 1);
+        int EnemyIndex = Random.Range(0, Enemies.Count);
         Instantiate(Enemies[EnemyIndex]);
     }
     
