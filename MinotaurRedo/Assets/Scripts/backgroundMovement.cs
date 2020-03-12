@@ -7,14 +7,7 @@ public class backgroundMovement : MonoBehaviour
     [SerializeField] private float moveSpeed = 0f;
     private float posX = 18.40f;
     private float bound = -19.96f;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
+    
     void Update()
     {
         moveBackground();
@@ -28,5 +21,4 @@ public class backgroundMovement : MonoBehaviour
             transform.position = (new Vector2(posX, 0));
         }
     }
-    
 }

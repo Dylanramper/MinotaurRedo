@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerManager : MonoBehaviour
 {
@@ -8,11 +9,12 @@ public class PlayerManager : MonoBehaviour
     BoxCollider2D bc;
     Animator anim;
 
-    public bool grounded;
-    public bool sliding;
-    public bool attacking;
+    public GameObject Wolf;
 
-    // Start is called before the first frame update
+    bool grounded;
+    bool sliding;
+    public bool attacking;
+    
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -23,8 +25,7 @@ public class PlayerManager : MonoBehaviour
         sliding = false;
         attacking = false;
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
         Controls();
@@ -51,8 +52,6 @@ public class PlayerManager : MonoBehaviour
         //Attack
         if(Input.GetKeyDown(KeyCode.Space) && grounded == true && sliding == false && attacking == false)
         {
-            Debug.Log("Attacking");
-
             attacking = true;
             anim.SetBool("IsAttacking", true);
         }
@@ -69,7 +68,6 @@ public class PlayerManager : MonoBehaviour
         }
     }
 
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
         //Set grounded to true if player is on the gorund and stop the jump animation
@@ -77,6 +75,17 @@ public class PlayerManager : MonoBehaviour
         {
             grounded = true;
             anim.SetBool("OnGround", true);
+        }
+
+        //if player collides with an enemy, kill the player
+        if(collision.gameObject.tag == "Enemy" || collision.gameObject.tag == "Wolf")
+        {
+            anim.SetBool("IsDead", true);
+        }
+
+        if(collision.gameObject.tag == "Wolf" && attacking)
+        {
+            Wolf.GetComponent<BoxCollider2D>().enabled = false;
         }
     }
 
@@ -91,5 +100,10 @@ public class PlayerManager : MonoBehaviour
     {
         attacking = false;
         anim.SetBool("IsAttacking", false);
+    }
+
+    void KillPlayer()
+    {
+        SceneManager.LoadScene(sceneBuildIndex: 1);
     }
 }

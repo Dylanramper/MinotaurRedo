@@ -9,8 +9,6 @@ public class EnemySpawn : MonoBehaviour
     public GameObject Ghost;
     public GameObject Wolf;
     public GameObject Rat;
-
-    //float spawnSpeed = 3f;
      
     void Start()
     {
@@ -18,18 +16,14 @@ public class EnemySpawn : MonoBehaviour
         Enemies.Add(Wolf);
         Enemies.Add(Rat);
 
+        //Repeat the spawner every 3 seconds
         InvokeRepeating("SpawnEnemy", 3f, 3f);
     }
-    
-    void Update()
-    {
 
-    }
-
+    //spawn a random enemy from the list
     void SpawnEnemy()
     {
         int EnemyIndex = Random.Range(0, Enemies.Count);
         Instantiate(Enemies[EnemyIndex]);
     }
-    
 }
