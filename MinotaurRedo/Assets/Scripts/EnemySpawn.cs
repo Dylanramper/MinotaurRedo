@@ -16,6 +16,8 @@ public class EnemySpawn : MonoBehaviour
         Enemies.Add(Wolf);
         Enemies.Add(Rat);
 
+        Wolf.GetComponent<BoxCollider2D>().enabled = true;
+
         //Repeat the spawner every 3 seconds
         InvokeRepeating("SpawnEnemy", 3f, 3f);
     }
