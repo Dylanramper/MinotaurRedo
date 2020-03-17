@@ -85,7 +85,7 @@ public class PlayerManager : MonoBehaviour
 
         if(collision.gameObject.tag == "Wolf" && attacking)
         {
-            Wolf.GetComponent<BoxCollider2D>().enabled = false;
+            Debug.Log("Wolf should be dead");
         }
     }
 
