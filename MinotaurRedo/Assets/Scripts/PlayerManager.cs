@@ -8,8 +8,7 @@ public class PlayerManager : MonoBehaviour
     Rigidbody2D rb;
     BoxCollider2D bc;
     Animator anim;
-
-    public GameObject Wolf;
+    EnemySpawn enemSpawn;
 
     bool grounded;
     bool sliding;
@@ -20,6 +19,7 @@ public class PlayerManager : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         bc = GetComponent<BoxCollider2D>();
         anim = GetComponent<Animator>();
+        enemSpawn = GetComponent<EnemySpawn>();
 
         grounded = true;
         sliding = false;
@@ -83,9 +83,11 @@ public class PlayerManager : MonoBehaviour
             anim.SetBool("IsDead", true);
         }
 
-        if(collision.gameObject.tag == "Wolf" && attacking)
+        else if(collision.gameObject.tag == "Wolf" && attacking)
         {
-            Wolf.GetComponent<BoxCollider2D>().enabled = false;
+            Debug.Log("Wolf should be dead");
+
+            enemSpawn.wolfDead = true;
         }
     }
 

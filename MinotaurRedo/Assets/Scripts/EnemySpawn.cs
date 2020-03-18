@@ -9,6 +9,8 @@ public class EnemySpawn : MonoBehaviour
     public GameObject Ghost;
     public GameObject Wolf;
     public GameObject Rat;
+
+    public bool wolfDead = false;
      
     void Start()
     {
@@ -27,5 +29,10 @@ public class EnemySpawn : MonoBehaviour
     {
         int EnemyIndex = Random.Range(0, Enemies.Count);
         Instantiate(Enemies[EnemyIndex]);
+
+        if(wolfDead == true)
+        {
+            Wolf.GetComponent<BoxCollider2D>().enabled = false;
+        }
     }
 }
