@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
+    public GameObject Wolf;
+    Animator anim;
     float moveSpeed;
     
     void Start()
     {
         //set the enemy move speed
         moveSpeed = 0.04f;
+        anim = GetComponent<Animator>();
     }
     
     void Update()
@@ -20,6 +23,15 @@ public class EnemyMovement : MonoBehaviour
         if(transform.position.x <= -12f)
         {
             Destroy(gameObject);
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Player" && collision.gameObject.GetComponent<PlayerManager>().attacking && Wolf)
+        {
+            Wolf.GetComponent<Collider2D>().enabled = false;
+            anim.SetBool("WolfIsDead", true);
         }
     }
 }

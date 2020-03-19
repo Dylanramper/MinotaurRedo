@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerManager : MonoBehaviour
 {
+    public GameObject Wolf;
     Rigidbody2D rb;
     BoxCollider2D bc;
     Animator anim;
@@ -83,12 +84,13 @@ public class PlayerManager : MonoBehaviour
             anim.SetBool("IsDead", true);
         }
 
-        else if(collision.gameObject.tag == "Wolf" && attacking)
+        /*else if(collision.gameObject.tag == "Wolf" && attacking)
         {
             Debug.Log("Wolf should be dead");
-
+            
             enemSpawn.wolfDead = true;
-        }
+        }*/
+        
     }
 
     //reset the box collider size and stop the slide animation
