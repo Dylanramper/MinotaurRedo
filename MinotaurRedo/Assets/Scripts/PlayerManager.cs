@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityStandardAssets.CrossPlatformInput;
 
 public class PlayerManager : MonoBehaviour
 {
@@ -89,6 +90,10 @@ public class PlayerManager : MonoBehaviour
     void ResetSlide()
     {
         sliding = false;
+    }
+
+    void ResetSlide2()
+    {
         anim.SetBool("IsSliding", false);
     }
 
