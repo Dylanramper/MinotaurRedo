@@ -26,6 +26,7 @@ public class EnemyMovement : MonoBehaviour
         }
     }
 
+    //If the player attacks the Wolf, kill the Wolf
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Player" && collision.gameObject.GetComponent<PlayerManager>().attacking && Wolf)

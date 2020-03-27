@@ -445,76 +445,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1001 &432747950
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3071825972848069330, guid: 4f1bdeeb2e21567458f69c0567a17e4d,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 4.6712704
-      objectReference: {fileID: 0}
-    - target: {fileID: 3071825972848069330, guid: 4f1bdeeb2e21567458f69c0567a17e4d,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -3.44
-      objectReference: {fileID: 0}
-    - target: {fileID: 3071825972848069330, guid: 4f1bdeeb2e21567458f69c0567a17e4d,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3071825972848069330, guid: 4f1bdeeb2e21567458f69c0567a17e4d,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3071825972848069330, guid: 4f1bdeeb2e21567458f69c0567a17e4d,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3071825972848069330, guid: 4f1bdeeb2e21567458f69c0567a17e4d,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3071825972848069330, guid: 4f1bdeeb2e21567458f69c0567a17e4d,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3071825972848069330, guid: 4f1bdeeb2e21567458f69c0567a17e4d,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3071825972848069330, guid: 4f1bdeeb2e21567458f69c0567a17e4d,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3071825972848069330, guid: 4f1bdeeb2e21567458f69c0567a17e4d,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3071825972848069330, guid: 4f1bdeeb2e21567458f69c0567a17e4d,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3071825972848069341, guid: 4f1bdeeb2e21567458f69c0567a17e4d,
-        type: 3}
-      propertyPath: m_Name
-      value: Wolf
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 3071825972848069340, guid: 4f1bdeeb2e21567458f69c0567a17e4d, type: 3}
-  m_SourcePrefab: {fileID: 100100000, guid: 4f1bdeeb2e21567458f69c0567a17e4d, type: 3}
 --- !u!1 &446155987
 GameObject:
   m_ObjectHideFlags: 0
@@ -545,7 +475,7 @@ Transform:
   - {fileID: 121088127}
   - {fileID: 823120210}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
@@ -1120,7 +1050,7 @@ Transform:
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1086104947
 MonoBehaviour:
@@ -1353,31 +1283,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 19.2, y: 1.154685}
   m_EdgeRadius: 0
---- !u!1 &1419117106 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3071825972848069341, guid: 4f1bdeeb2e21567458f69c0567a17e4d,
-    type: 3}
-  m_PrefabInstance: {fileID: 432747950}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &1419117107
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1419117106}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7f62167c37a7b9a4e9383f0e63818235, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1579343202
 GameObject:
   m_ObjectHideFlags: 0
@@ -1882,7 +1787,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1924837500
 MonoBehaviour:
@@ -1899,7 +1804,6 @@ MonoBehaviour:
   Ghost: {fileID: 5088558458108035994, guid: ac327d93c15395f4895532b396e964bb, type: 3}
   Wolf: {fileID: 3071825972848069341, guid: 4f1bdeeb2e21567458f69c0567a17e4d, type: 3}
   Rat: {fileID: 8866029426023188777, guid: b1154d0afe1060648a1e9b6b180acc72, type: 3}
-  wolfDead: 0
 --- !u!1 &1961600756
 GameObject:
   m_ObjectHideFlags: 0

@@ -79,21 +79,13 @@ public class PlayerManager : MonoBehaviour
         }
 
         //if player collides with an enemy, kill the player
-        if(collision.gameObject.tag == "Enemy" || collision.gameObject.tag == "Wolf")
+        if(collision.gameObject.tag == "Enemy" || collision.gameObject.tag == "Wolf" && !attacking)
         {
             anim.SetBool("IsDead", true);
         }
-
-        /*else if(collision.gameObject.tag == "Wolf" && attacking)
-        {
-            Debug.Log("Wolf should be dead");
-            
-            enemSpawn.wolfDead = true;
-        }*/
-        
     }
 
-    //reset the box collider size and stop the slide animation
+    //reset functions for animations
     void ResetSlide()
     {
         sliding = false;
@@ -106,6 +98,7 @@ public class PlayerManager : MonoBehaviour
         anim.SetBool("IsAttacking", false);
     }
 
+    //load end game screen when player dies
     void KillPlayer()
     {
         SceneManager.LoadScene(sceneBuildIndex: 1);
