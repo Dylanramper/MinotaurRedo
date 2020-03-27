@@ -5,11 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class PlayerManager : MonoBehaviour
 {
+    public GameObject Wolf;
     Rigidbody2D rb;
     BoxCollider2D bc;
     Animator anim;
-
-    public GameObject Wolf;
+    EnemySpawn enemSpawn;
 
     bool grounded;
     bool sliding;
@@ -20,6 +20,7 @@ public class PlayerManager : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         bc = GetComponent<BoxCollider2D>();
         anim = GetComponent<Animator>();
+        enemSpawn = GetComponent<EnemySpawn>();
 
         grounded = true;
         sliding = false;
@@ -78,18 +79,13 @@ public class PlayerManager : MonoBehaviour
         }
 
         //if player collides with an enemy, kill the player
-        if(collision.gameObject.tag == "Enemy" || collision.gameObject.tag == "Wolf")
+        if(collision.gameObject.tag == "Enemy" || collision.gameObject.tag == "Wolf" && !attacking)
         {
             anim.SetBool("IsDead", true);
         }
-
-        if(collision.gameObject.tag == "Wolf" && attacking)
-        {
-            Debug.Log("Wolf should be dead");
-        }
     }
 
-    //reset the box collider size and stop the slide animation
+    //reset functions for animations
     void ResetSlide()
     {
         sliding = false;
@@ -102,6 +98,7 @@ public class PlayerManager : MonoBehaviour
         anim.SetBool("IsAttacking", false);
     }
 
+    //load end game screen when player dies
     void KillPlayer()
     {
         SceneManager.LoadScene(sceneBuildIndex: 1);

@@ -13,6 +13,7 @@ public class backgroundMovement : MonoBehaviour
         moveBackground();
     }
 
+    //If the image is too far to the left, spawn it to the right
     void moveBackground()
     {
         transform.Translate(moveSpeed, 0, 0);

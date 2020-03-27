@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemySpawn : MonoBehaviour
 {
+    //Create a list to store enemies
     List<GameObject> Enemies = new List<GameObject>();
 
     public GameObject Ghost;
@@ -12,6 +13,7 @@ public class EnemySpawn : MonoBehaviour
      
     void Start()
     {
+        //Add enemies to list
         Enemies.Add(Ghost);
         Enemies.Add(Wolf);
         Enemies.Add(Rat);
