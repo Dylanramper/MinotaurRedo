@@ -70,6 +70,39 @@ public class PlayerManager : MonoBehaviour
         }
     }
 
+    public void Jump()
+    {
+        if (grounded == true && sliding == false && attacking == false)
+        {
+
+            rb.AddForce(new Vector2(0, 1500f));
+
+            grounded = false;
+            anim.SetBool("OnGround", false);
+        }
+    }
+
+    public void Attack()
+    {
+        if (grounded == true && sliding == false && attacking == false)
+        {
+            attacking = true;
+            anim.SetBool("IsAttacking", true);
+        }
+    }
+
+    public void Slide()
+    {
+        if (sliding == false && grounded == true && attacking == false)
+        {
+            //Set the box collider size to 0.2f and play the slide animation
+            bc.size = new Vector2(bc.size.x, 0.25f);
+            bc.offset = new Vector2(bc.offset.x, 0f);
+
+            sliding = true;
+            anim.SetBool("IsSliding", true);
+        }
+    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         //Set grounded to true if player is on the gorund and stop the jump animation
