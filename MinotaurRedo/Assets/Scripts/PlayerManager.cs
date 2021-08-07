@@ -15,6 +15,7 @@ public class PlayerManager : MonoBehaviour
     bool grounded;
     bool sliding;
     public bool attacking;
+    bool dead;
     
     void Start()
     {
@@ -26,6 +27,7 @@ public class PlayerManager : MonoBehaviour
         grounded = true;
         sliding = false;
         attacking = false;
+        dead = false;
     }
     
     void Update()
@@ -37,6 +39,12 @@ public class PlayerManager : MonoBehaviour
         {
             bc.size = new Vector2(bc.size.x, 0.36f);
             bc.offset = new Vector2(bc.offset.x, -0.03f);
+        }
+
+        //If dead is true then the player will slide off screen
+        if(dead == true)
+        {
+            transform.Translate(new Vector2(-0.04f, 0));
         }
     }
 
@@ -115,6 +123,7 @@ public class PlayerManager : MonoBehaviour
         //if player collides with an enemy, kill the player
         if(collision.gameObject.tag == "Enemy" || collision.gameObject.tag == "Wolf" && !attacking)
         {
+            dead = true;
             anim.SetBool("IsDead", true);
         }
     }
@@ -139,6 +148,6 @@ public class PlayerManager : MonoBehaviour
     //load end game screen when player dies
     void KillPlayer()
     {
-        SceneManager.LoadScene(sceneBuildIndex: 1);
+        SceneManager.LoadScene(sceneBuildIndex: 2);
     }
 }

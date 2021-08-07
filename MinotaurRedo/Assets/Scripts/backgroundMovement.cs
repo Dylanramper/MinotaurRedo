@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class backgroundMovement : MonoBehaviour
 {
-    [SerializeField] private float moveSpeed = 0f;
+    public float moveSpeed = 0f;
     private float posX = 18.40f;
     private float bound = -19.96f;
     
