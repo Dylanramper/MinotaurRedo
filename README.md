@@ -16,7 +16,7 @@ I was responsible for programming the core gameplay systems, including player co
 
 ### Attacking
 
-![Minotaur Run - Attacking](Screenshots./Minotaur_attack.png)
+![Minotaur Run - Attacking](Screenshots./Minotaur_attak.png)
 
 ### Sliding
 
