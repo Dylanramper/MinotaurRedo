@@ -8,6 +8,20 @@ Minotaur Run is a 2D infinite runner developed in Unity and C#. This was an earl
 
 I was responsible for programming the core gameplay systems, including player controls, enemy systems, combat interactions, animation states, and the scrolling background system.
 
+## Screenshots
+
+### Jumping
+
+![Minotaur Run - Jumping](Screenshots/Minotaur_jump.png)
+
+### Attacking
+
+![Minotaur Run - Attacking](Screenshots/Minotaur_attack.png)
+
+### Sliding
+
+![Minotaur Run - Sliding](Screenshots/Minotaur_slide.png)
+
 ## Gameplay Systems
 
 ### Player Controller
