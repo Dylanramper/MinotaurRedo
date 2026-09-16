@@ -12,15 +12,15 @@ I was responsible for programming the core gameplay systems, including player co
 
 ### Jumping
 
-![Minotaur Run - Jumping](Screenshots/Minotaur_jump.png)
+![Minotaur Run - Jumping](Screenshots./Minotaur_jump.png)
 
 ### Attacking
 
-![Minotaur Run - Attacking](Screenshots/Minotaur_attack.png)
+![Minotaur Run - Attacking](Screenshots./Minotaur_attack.png)
 
 ### Sliding
 
-![Minotaur Run - Sliding](Screenshots/Minotaur_slide.png)
+![Minotaur Run - Sliding](Screenshots./Minotaur_slide.png)
 
 ## Gameplay Systems
 
